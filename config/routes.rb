@@ -1,4 +1,9 @@
 QuestionAndAnswer::Application.routes.draw do
+  devise_for :users
+
+  resources :questions
+
+  root :to => "questions#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
