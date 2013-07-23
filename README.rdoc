@@ -3,4 +3,4 @@ to create, update, or delete, questions and their accompanying answers, you must
 app will track which questions you create or update.
 
 Here is a screen shot of the main page:
-![alt text](https://raw.github.com/ggriffis/question-and_answer/master/app/assets/images/Screen_Shot.png?raw=true)
+![Image](https://raw.github.com/ggriffis/question-and_answer/master/app/assets/images/Screen_Shot.png?raw=true)
