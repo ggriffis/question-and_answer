@@ -1,15 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div id="question">
+  <h2>Question</h2>
+  <p id="notice"><%= notice %></p>
+  <p>
+    <b>Description:</b>
+    <%= @question.description %>
+  </p>
 
-<p>
-  <b>Description:</b>
-  <%= @question.description %>
-</p>
+  <p>
+    <b>Answer:</b>
+    <%= @question.answer %>
+  </p>
+</div>
 
-<p>
-  <b>Answer:</b>
-  <%= @question.answer %>
-</p>
-
+<h3>Users who have updated this question or answer</h3>
+<ul id='users'>
+  <% @question.users.each do |user| %>
+    <li>
+      #<%= user.email %>
+    </li>
+  <% end %>
+</ul>
 
 <%= link_to 'Edit', edit_question_path(@question) %> |
 <%= link_to 'Back', questions_path %>

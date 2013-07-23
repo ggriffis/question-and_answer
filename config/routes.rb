@@ -1,7 +1,13 @@
 QuestionAndAnswer::Application.routes.draw do
   devise_for :users
 
-  resources :questions
+  resources :questions do
+    resources :users
+  end
+
+  resources :users do
+    resources :questions
+  end
 
   root :to => "questions#index"
   # The priority is based upon order of creation:
