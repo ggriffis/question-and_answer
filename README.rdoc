@@ -1,6 +1,6 @@
 This app will allow you to track questions with single updates.  You can view questions as an anonymous user.  In order
-to create, update, or delete, questions and their accompanying answers, you must sign up as a user and sign in.  The 
+to create, update, or delete, questions and their accompanying answers, you must sign up as a user and sign in.  The
 app will track which questions you create or update.
 
 Here is a screen shot of the main page:
-![My image](ggriffis.github.com/repository/app/assets/images/Screen Shot.png)
+![My image](https://raw.github.com/ggriffis/question-and_answer/master/app/assets/images/Screen_Shot.png)
