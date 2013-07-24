@@ -12,11 +12,11 @@
   </p>
 </div>
 
-<h3>Users who have updated this question or answer</h3>
+<h3>Updates to this question or answer</h3>
 <ul id='users'>
-  <% @question.users.each do |user| %>
+  <% @question.authorships.each do |authorship| %>
     <li>
-      #<%= user.email %>
+      <%= 'Updated by ' + authorship.user.email + ' at ' + authorship.created_at.to_s  %>
     </li>
   <% end %>
 </ul>

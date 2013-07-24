@@ -42,10 +42,10 @@ class QuestionsController < ApplicationController
   # POST /questions.json
   def create
     @question = Question.new(params[:question])
-    update_user_question_associations
 
     respond_to do |format|
       if @question.save
+        update_user_question_associations
         format.html { redirect_to @question, notice: 'Question was successfully created.' }
         format.json { render json: @question, status: :created, location: @question }
       else
@@ -90,8 +90,6 @@ class QuestionsController < ApplicationController
 
 private
   def update_user_question_associations
-    @question.users << current_user unless @question.users.include?(current_user)
-    #Apparently, you only have to set it in one direction and Rails will
-    #automatically also add the question to the user (through the HABTM heper)
+    @question.users << current_user
   end
 end
