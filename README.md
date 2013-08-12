@@ -5,3 +5,5 @@ app will track which questions you create or update.  This app demonstrates the 
 Here is a screen shot of the main page:
 ![Image](https://raw.github.com/ggriffis/question-and_answer/master/app/assets/images/Screen_Shot.png?raw=true)
 Format: ![Alt Text](url)
+
+MIT License: http://ginger.mit-license.org
